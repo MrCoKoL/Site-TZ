@@ -1,0 +1,207 @@
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-  16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+<title>FlexBox Exercise #3 - Image carousel / Responsive </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<header>
+    <img src="https://i.postimg.cc/Njj2FSH6/The-Expanse-logo.png" width="290" hspace="100px" draggable="false" alt="Logo">
+</header>
+<main>
+    <div class="post">
+      <img height="280" src="https://i.postimg.cc/ZKrXnDS8/image1s.jpg" alt="Card image cap">
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="menuCheckbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <!-- 
+      We can use a label here to close upon click (when doing same page navigation), this
+      does require a slight bit of JS.
+      -->
+      <li>
+        <a href="index.html">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Главная</label>
+        </a>
+      </li>
+      <li>
+        <a href="Ipost1K.html">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Кентербери</label>
+        </a>
+      </li>
+      
+      <!-- These just close the menu -->
+      <li>
+        <a href="Ipost2D.html">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Доннаджер</label>
+        </a>
+      </li>
+      <li>
+        <a href="Ipost3R.html">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Росинант</label>
+        </a>
+      </li>
+      
+      <!-- Or just use regular URLs -->
+      <li>
+        <a href="Iabout.html" target="_blank">О нас</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+      
+      <div>
+        <h3>Кентербери</h3>
+        <p>
+          Кентербери, бывший колониальный корабль, который в свои времена расслелил людей по всей солнечной системе. Его целью были спутники Сатурна и Юпитера. Например, именно он доставил предшественников населения, что насчитывает миллионы на Ганимеде. Позже был оборудован в ледовоз, который возил лед с колец Сатурна, в Пояс астероидов, который испытывал нехватку воды. После был уничтожен неизвестным стеллс кораблем.
+        </p>
+        <a href="Ipost1K.html">Подробнее</a>
+        <div class="comments">
+  <h4>Комментарии (10)</h4>
+  <div class="comment"><strong>Джон</strong><p>Классный корабль был. Жалко, что сожгли.</p></div>
+  <div class="comment"><strong>Марсианка</strong><p>А я думала, его переделали в ледовоз позже всех.</p></div>
+  <div class="comment"><strong>Карыч</strong><p>Он нам воду возил.</p></div>
+  <div class="comment"><strong>Алекс</strong><p>Стелс-корабль настоящая загадка.</p></div>
+  <div class="comment"><strong>Механик</strong><p>Мой любимый корабль из первой книги.</p></div>
+  <div class="comment"><strong>Космо-десантник</strong><p>За императора!</p></div>
+  <div class="comment"><strong>Доктор_Ч</strong><p>С точки зрения инженерии монстр, конечно.</p></div>
+  <div class="comment"><strong>Семён</strong><p>Про «стеллс» пишут мало, но ладно.</p></div>
+  <div class="comment"><strong>Лена</strong><p>А сколько людей он перевёз?</p></div>
+  <div class="comment"><strong>Фан</strong><p>Именно с него всё и началось. Классика.</p></div>
+</div>
+      </div>
+    </div>
+    <div class="post">
+      <img height="270" src="https://i.postimg.cc/Z5QPS4M6/images-(2).jpg" alt="Card image cap">
+      <div>
+        <h3>Доннаджер</h3>
+        <p>
+          Линкор и известный флагман МВКФ (Марсианский Военно Космический Флот). Гигантский корпус позволял нести внутри полноценную авиагруппу поддержки. Внутренний док вмещал до шести легких фрегатов класса корвет (одним из которых была Тачи, позже переименованная в Росинант). Корабль приводился в движение четырьмя сверхмощными термоядерными двигателями Эпштейна типа RT-10 «Каминари». Из-за вертикальной архитектуры («эффект небоскреба») палубы располагались перпендикулярно вектору тяги. В книге: «Пробуждение Левиафана» Доннаджер подвергся внезапному нападению. Шесть неизвестных высокотехнологичных кораблей-невидимок устроили засаду, и уничтожили корабль.
+        </p>
+        <a href="Ipost2D.html">Подробнее</a>
+        <div class="comments">
+  <h4>Комментарии (10)</h4>
+  <div class="comment"><strong>Артём Соколов</strong><p>Слушайте, а кто-нибудь знает, сколько там экипаж был? Тысячи же, да? До сих пор не укладывается, что его вот так просто взяли и разобрали.</p></div>
+  <div class="comment"><strong>Марина</strong><p>Обиднее всего, что даже толком не поняли, кто напал.</p></div>
+  <div class="comment"><strong>Кирилл Воронов</strong><p>Мне больше всего нравилось, как у него палубы шли. Жаль, в сериале показали мало.</p></div>
+  <div class="comment"><strong>Настя</strong><p>А мне всегда было жалко не сам корабль, а людей на нём.</p></div>
+  <div class="comment"><strong>Дмитрий К.</strong><p>Честно, я до сих пор путаю, что было в книге, а что в сериале.</p></div>
+  <div class="comment"><strong>Оля Ершова</strong><p>Никто не зацепился за то, что Тачи тогда оттуда ушла?</p></div>
+  <div class="comment"><strong>Сергей Р.</strong><p>Марсианский флот вообще в этой вселенной показан интересно. Прям чувствуется, что у них военная дисциплина, культ флота, всё серьёзно.</p></div>
+  <div class="comment"><strong>Женя</strong><p>Кто-нибудь ещё пересматривал этот эпизод в 4К? Потому что я пересматривал. И не раз.</p></div>
+  <div class="comment"><strong>Виктор</strong><p>Мне кажется, или книга реально была жёстче? В сериале как-то побыстрее всё прошло. Я не хейтер сериала, просто ощущение такое осталось.</p></div>
+  <div class="comment"><strong>Лиза</strong><p>Обожаю, когда корабль это не просто железо, а персонаж. Доннаджер именно такой.</p></div>
+</div>
+      </div>
+    </div>
+  <div class="pos">
+    <div class="post">
+      <img height="230" src="https://i.postimg.cc/W3XQNDLB/images.jpg" alt="Card image cap">
+      <div>
+        <h3>Росинант</h3>
+        <p>
+          Бывший корвет Марисанской Конгресс Республики, который был спасен экипажем персонажей из цикла книг "Пространство". Ранее носил позывной "Тачи", но позже был переименован в "Росинант" капитаном Холденом. Оснащен несколькими орудиями точечной обороны, пусковыми отсеками - для пуска торпед. А позже обзавелся линейным рельсотроном.
+        </p>
+        <a href="Ipost3R.html">Подробнее</a>
+        <div class="comments">
+  <h4>Комментарии (10)</h4>
+  <div class="comment"><strong>Андрей С.</strong><p>Помню, когда Холден назвал его Росинант, я сразу полез гуглить. Узнал про Дон Кихота, про мельницы. Приятно, когда автор играет с такими вещами.</p></div>
+  <div class="comment"><strong>Катя</strong><p>Рельсотрон на корвете это, конечно, наглость..</p></div>
+  <div class="comment"><strong>Максим Т.</strong><p>Мне кажется, все любят Росинант не потому, что он крутой.</p></div>
+  <div class="comment"><strong>Оксана</strong><p>Пьяный пилот лучшее описание. Скучаю по нему ужасно, если честно.</p></div>
+  <div class="comment"><strong>Пётр Кравченко</strong><p>Кому интересно про то, как Тачи попал к ним почитайте момент в книге. Спойлерить не буду.</p></div>
+  <div class="comment"><strong>Юля</strong><p>У меня он на заставке телефона</p></div>
+  <div class="comment"><strong>Тимур</strong><p>Мне иногда кажется, что Марс вообще зря отдал им этот корвет. С другой стороны, без него половина сюжета развалилась бы. Так что пусть.</p></div>
+  <div class="comment"><strong>Ирина Ф.</strong><p>Механики здорово над ним потрудились</p></div>
+  <div class="comment"><strong>Роман</strong><p>Точечная оборона недооценённая штука. В сериале сцены с ней всегда на нервах. Ощущение, будто реально сидишь в кресле и ждёшь, кто кого.</p></div>
+  <div class="comment"><strong>Даша</strong><p>Марс сделал шедевр</p></div>
+</div>
+      </div>
+    </div>
+  </div>
+<div class="carousel">
+  <div class="carousel-track">
+    <div class="slide">
+      <img src="https://i.postimg.cc/ZKrXnDS8/image1s.jpg" alt="Слайд 1">
+    </div>
+    <div class="slide">
+      <img src="https://i.postimg.cc/Z5QPS4M6/images-(2).jpg" alt="Слайд 2">
+    </div>
+    <div class="slide">
+      <img src="https://i.postimg.cc/W3XQNDLB/images.jpg" alt="Слайд 3">
+    </div>
+     <div class="slide"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPpWmPF04gCWvnh_AdDn5rUWLZ82Q61aN8GwX44CbGIfgl42lO2fUxTM&s=10" alt="Слайд 4">
+    </div>
+    <div class="slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQup2I2TBKwR2YzYNS2VDHn6XcEx9m1QKAuHC520w13Sg&s=10" alt="Слайд 5">
+    </div>
+  </div>
+  <button class="prev">Назад</button>
+  <button class="next">Вперёд</button>
+</div>
+
+
+<body>
+
+</body>
+  
+</main>
+<footer>
+  <div>
+    <div>
+      <div>
+        <img src="https://i.postimg.cc/Njj2FSH6/The-Expanse-logo.png" alt="Logo" width="250">
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="index.html">Главная</a> <br>
+          <a href="Ipost1K.html">Кентербери</a> <br>
+          <a href="Ipost2D.html">Доннаджер</a> <br>
+          <a href="Ipost3R.html">Росинант</a> <br>
+          <a href="Iabout.html">О нас</a>
+          <p>
+            Програмирую, люблю научную фантастику. Сайт сделан с помощью шаблона. Вселенная "The Expance", изначально была показана в книгах, но позже по её мотивам сняли одноименный сериал.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Свяжитесь со мной</h3>
+          <p>
+            Если вы заинтересованы в работе со мной или просто хотите поздороваться, просто напишите по электронной почте.
+            <br><strong>Email: <a href="#">legendarysokol12@gmail.com</a></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <center>
+      <small>Copyright &copy; 2026</small>
+    </center>
+  </div>
+</footer>
+<script  src="script.js"></script>
